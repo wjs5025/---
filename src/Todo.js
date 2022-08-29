@@ -29,11 +29,29 @@ const readTodo = (todo_list, id) => {
 
 /** updateTodo() : todo를 수정하는 함수
  * @param todo_list todo을 수정할 대상 Todo 목록
- * @param id 수정할 특정 todo의 id
+ * @param id 수정할 todo의 id
+ * @param content 수정할 todo의 내용
+ * @param done 수정할 todo의 완료 여부
+ * @param category 수정할 todo의 카테고리
+ * @param tags 수정할 todo의 태그 목록
  * @returns 수정 완료 된 todo 목록 반환
  */
-const updateTodo = (todo_list, id) => {
+const updateTodo = (todo_list, id, content, done, category, tags) => {
   // todo_list에서 id를 가진 todo를 update
+  const todo = todo_list.find((el) => el.id === id);
+  if (content) {
+    todo.content = content;
+  }
+  if (done) {
+    todo.done = done;
+  }
+  if (category) {
+    todo.category = category;
+  }
+  if (tags) {
+    todo.tags = tags;
+  }
+
   return todo_list;
 };
 
