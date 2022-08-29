@@ -1,0 +1,37 @@
+{
+	"tags":
+	{
+		"allowUnknownTags" : true
+	},
+	"plugins":[
+		 "plugins/markdown"
+		,"/Users/Jeon/AppData/Roaming/npm/node_modules/tsdoc/template/plugins/TSDoc.js"
+	],
+	"opts":
+	{
+		"template"	:"/Users/Jeon/AppData/Roaming/npm/node_modules/tsdoc/template",
+		"recurse"	:"true"
+	},
+	"templates" : {
+		"cleverLinks"     : false,
+		"monospaceLinks"  : false
+	},
+	"source":
+	{
+		"includePattern": "(\\.d)?\\.ts$"
+	},
+	"markdown"  : {
+		"parser"   : "gfm",
+		"hardwrap" : true
+	},
+	"tsdoc":{
+		"source"		:"/Users/Jeon/Desktop/원티드/src/",
+		"destination"	:"/Users/Jeon/Desktop/원티드/docs",
+		"tutorials"		:"",
+		"systemName"	: "원티드",
+		"footer"		: "",
+		"copyright"		: "원티드 Copyright © 2022 Jeon.",
+		"outputSourceFiles" : true,
+		"commentsOnly": true
+	}
+}
